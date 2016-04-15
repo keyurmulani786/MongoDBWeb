@@ -11,7 +11,7 @@ public class DBUtilMain {
 		MongoDBUtil dbSingleton = MongoDBUtil.getInstance();
 		DB db = dbSingleton.getTestdb();
 		Set<String> tables = db.getCollectionNames();
-		System.out.println("============================================");			
+		System.out.println("====================get table colums========================");			
 		for(String coll : tables){
 			System.out.println(coll);
 		}
